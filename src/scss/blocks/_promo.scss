@@ -25,11 +25,18 @@
         height: 60%;
         border-radius: 25px;
         &_exit{
+            &.active{
+                img{
+                    transform: rotate(360deg);
+                    transition: all 1.2s;
+                }
+            }
             position: absolute;
             cursor: pointer;
             right: 20px;
             top: 20px;
             img{
+                transition: all 1s;
                 width: 40px;
             }
         }
@@ -53,8 +60,14 @@
             font-weight: 700;
             background: #3366FF;
             border-radius: 20px;
+            transition: all 0.8s;
             &.active{
                 display: block;
+            }
+            &:hover{
+                background: #3057cc;
+                box-shadow: 0px 5px 37.5px rgba(19, 66, 160, 0.623);
+                transition: all 0.8s;
             }
         }
         &_info{

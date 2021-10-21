@@ -7,11 +7,13 @@ const promo = document.querySelector('.promo'),
 exit.addEventListener('click', () => {
     promo.classList.remove('active');
     info.classList.remove('active');
+    exit.classList.remove('active');
 });
 
 btn.forEach(function(el) {   
      el.onclick = function(){   
         promo.classList.add('active');
+        exit.classList.add('active');
         copytxt.classList.add('active');
      };
 });
